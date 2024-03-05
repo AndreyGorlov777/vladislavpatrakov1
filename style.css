@@ -1,0 +1,39 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(45deg, #ffffff 50%, #eb0000 100%);
+}
+.foot {
+    background: linear-gradient(45deg, #ffffff 0%, #eb0000 100%);
+}
+
+.col-12.text-center a {
+    text-decoration: none;
+}
+
+.header {
+    transition: transform 0.3s linear;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Для экранов шириной менее col-md */
+@media (max-width: 767px) {
+    .navbar-brand.bs {
+        display: none; /* Скрываем логотип для больших экранов */
+    }
+}
+
+/* Для экранов шириной col-md и более */
+@media (min-width: 768px) {
+    .navbar-brand.ss {
+        display: none; /* Скрываем логотип для маленьких экранов */
+    }
+}
